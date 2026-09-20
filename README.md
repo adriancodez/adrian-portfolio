@@ -1,39 +1,19 @@
-# Adrian Mutua — Portfolio V2
+# Adrian Mutua Portfolio — Agency Style
 
-A premium dark developer portfolio for Adrian Mutua.
+This version uses an agency/business landing-page structure inspired by the layout direction of The Grit Agencies, while using Adrian Mutua's own branding and content.
 
-## Stack
+## Full technology list
 
-- HTML
-- CSS
-- Vanilla JavaScript
-- Google Fonts
+HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Express.js, Python, PostgreSQL, Tailwind CSS, AWS, Git, GitHub.
 
-## Included
+## Run
 
-- Animated hero entrance
-- Scroll reveal animations
-- Responsive mobile layout
-- Interactive project rows
-- Capabilities section
-- Contact CTA
-- GitHub and LinkedIn links
-- Subtle grain texture
-- Desktop mouse interaction
+Open `index.html` in a browser or use VS Code Live Server.
 
-## Run locally
-
-Open `index.html` directly in a browser, or use the VS Code Live Server extension.
-
-## Update and push to GitHub
-
-After replacing your existing portfolio files:
+## GitHub update
 
 ```bash
 git add .
-git commit -m "Upgrade portfolio to version 2"
+git commit -m "Redesign portfolio with agency style layout"
 git push
 ```
-
-GitHub repository:
-https://github.com/adriancodez/adrian-portfolio
