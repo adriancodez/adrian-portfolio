@@ -1,23 +1,39 @@
-# Adrian Mutua — Portfolio
+# Adrian Mutua — Portfolio V2
 
-A dark, minimal full-stack developer portfolio inspired by the visual structure of the reference portfolio you provided, but written as an original implementation.
+A premium dark developer portfolio for Adrian Mutua.
 
-## Files
-- `index.html` — page structure/content
-- `style.css` — layout, responsive design and animations
-- `script.js` — scroll reveal effects
+## Stack
+
+- HTML
+- CSS
+- Vanilla JavaScript
+- Google Fonts
+
+## Included
+
+- Animated hero entrance
+- Scroll reveal animations
+- Responsive mobile layout
+- Interactive project rows
+- Capabilities section
+- Contact CTA
+- GitHub and LinkedIn links
+- Subtle grain texture
+- Desktop mouse interaction
 
 ## Run locally
-Open `index.html` in VS Code and use Live Server, or simply open the file in your browser.
 
-## Customize
-Search `index.html` for:
-- project names/descriptions
-- about text
-- email
-- GitHub
-- LinkedIn
-- skills
-- statistics
+Open `index.html` directly in a browser, or use the VS Code Live Server extension.
 
-Replace placeholder project descriptions with the exact details and links for your projects.
+## Update and push to GitHub
+
+After replacing your existing portfolio files:
+
+```bash
+git add .
+git commit -m "Upgrade portfolio to version 2"
+git push
+```
+
+GitHub repository:
+https://github.com/adriancodez/adrian-portfolio

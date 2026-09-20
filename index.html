@@ -1,154 +1,180 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Adrian Mutua — Software Engineer and Full-Stack Developer">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Adrian Mutua — Software Engineer and Full Stack Developer based in Nairobi, Kenya." />
   <title>Adrian Mutua — Software Engineer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@300;400;500&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
   <div class="noise"></div>
+
   <header class="site-header">
-    <a class="logo" href="#top">AM/</a>
+    <a class="brand" href="#top">AM<span>.</span></a>
     <nav>
-      <a href="#work">Work</a>
       <a href="#about">About</a>
+      <a href="#work">Work</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
-    <div class="location">
-      <span>NAIROBI, KENYA</span>
-      <small>01.2921°S / 36.8219°E</small>
-    </div>
+    <span class="location">NAIROBI, KE</span>
   </header>
 
   <main id="top">
-    <section class="hero section">
-      <div class="eyebrow reveal">SOFTWARE ENGINEER — FULL STACK</div>
-      <h1 class="hero-title reveal">ADRIAN<br>MUTUA<span>.</span></h1>
-      <div class="hero-bottom">
-        <p class="hero-copy reveal">
-          Hey, I'm Adrian — a software engineering graduate from Moringa School,
-          building performant, scalable web applications with a sharp eye for
-          useful experiences and clean design.
+    <section class="hero">
+      <div class="hero-meta reveal">
+        <span>SOFTWARE ENGINEER — FULL STACK</span>
+        <span>2026</span>
+      </div>
+
+      <div class="hero-title">
+        <h1 class="line"><span>ADRIAN</span></h1>
+        <h1 class="line accent-line"><span>MUTUA.</span></h1>
+      </div>
+
+      <div class="hero-bottom reveal">
+        <p class="intro">
+          Hey, I'm Adrian — a software engineer and Moringa School graduate
+          who enjoys turning ideas into clean, useful digital products.
         </p>
-        <div class="stack reveal">
-          <span>React</span>
-          <span>Node.js</span>
-          <span>PostgreSQL</span>
-          <span>Python</span>
+        <div class="availability">
+          <span class="pulse"></span>
+          <span>AVAILABLE FOR SELECT PROJECTS</span>
         </div>
       </div>
-      <a class="scroll-cue" href="#about"><span></span> SCROLL</a>
+
+      <div class="hero-stack reveal">
+        <span>REACT</span>
+        <span>NODE.JS</span>
+        <span>POSTGRESQL</span>
+        <span>PYTHON</span>
+      </div>
+
+      <a class="scroll-cue" href="#about">SCROLL <span>↓</span></a>
     </section>
 
     <section id="about" class="section about">
-      <div class="section-label">01 / 04</div>
-      <div class="section-heading"><span>About</span></div>
-      <div class="about-grid">
-        <p class="large-copy">
-          Hi, I'm Adrian — a software engineering graduate from Moringa School.
-          I enjoy turning ideas into practical digital products, working across
-          the backend and frontend to build applications that are reliable,
-          responsive and easy to use.
-        </p>
-        <div class="about-note">
-          <span>BASED IN</span>
-          <strong>Nairobi, Kenya</strong>
-          <span>FOCUS</span>
-          <strong>Full-Stack Development</strong>
+      <div class="section-label reveal">01 — ABOUT</div>
+      <div class="about-content">
+        <div class="about-heading reveal">
+          <p>BUILDING DIGITAL PRODUCTS WITH PURPOSE.</p>
+        </div>
+        <div class="about-copy reveal">
+          <p>
+            I like building things that are useful. From business websites
+            to full-stack applications, I focus on creating experiences that
+            are simple to use and solid underneath.
+          </p>
+          <p>
+            My work spans frontend development, backend APIs, databases,
+            Git workflows and deployment. I'm constantly learning and
+            looking for better ways to turn problems into practical software.
+          </p>
         </div>
       </div>
-      <div class="stats">
-        <div><strong>01</strong><span>Software Engineering Graduate</span></div>
-        <div><strong>03+</strong><span>Featured Projects</span></div>
-        <div><strong>10+</strong><span>Core Technologies & Tools</span></div>
+
+      <div class="stats reveal">
+        <div><strong>01</strong><span>MORINGA SCHOOL<br>GRADUATE</span></div>
+        <div><strong>03+</strong><span>FEATURED<br>PROJECTS</span></div>
+        <div><strong>10+</strong><span>TECHNOLOGIES<br>& TOOLS</span></div>
       </div>
     </section>
 
     <section id="work" class="section work">
-      <div class="section-label">02 / 04</div>
-      <div class="section-heading"><span>Selected Work</span></div>
-      <div class="projects">
-        <article class="project reveal">
+      <div class="section-label reveal">02 — SELECTED WORK</div>
+
+      <div class="project-list">
+        <a class="project reveal" href="#" aria-label="Paul Wambua Valuers project">
           <div class="project-number">01</div>
-          <div>
-            <h3>Paul Wambua Valuers</h3>
-            <p>Digital presence and web experience for a property valuation business.</p>
-            <div class="tags"><span>Web</span><span>Frontend</span><span>Business</span></div>
+          <div class="project-main">
+            <h2>Paul Wambua Valuers</h2>
+            <p>Professional web presence for a property valuation business.</p>
+            <div class="project-tags"><span>WEB</span><span>BUSINESS</span><span>UI</span></div>
           </div>
-          <span class="arrow">↗</span>
-        </article>
+          <span class="project-arrow">↗</span>
+        </a>
 
-        <article class="project reveal">
+        <a class="project reveal" href="#" aria-label="Event Hub project">
           <div class="project-number">02</div>
-          <div>
-            <h3>Event Hub</h3>
-            <p>Full-stack event platform built to manage and interact with events online.</p>
-            <div class="tags"><span>React</span><span>Node.js</span><span>PostgreSQL</span></div>
+          <div class="project-main">
+            <h2>Event Hub</h2>
+            <p>Full-stack event platform built around React, Node.js and PostgreSQL.</p>
+            <div class="project-tags"><span>REACT</span><span>NODE.JS</span><span>POSTGRESQL</span></div>
           </div>
-          <span class="arrow">↗</span>
-        </article>
+          <span class="project-arrow">↗</span>
+        </a>
 
-        <article class="project reveal">
+        <a class="project reveal" href="#" aria-label="Hospital Management System project">
           <div class="project-number">03</div>
-          <div>
-            <h3>Hospital Management System</h3>
-            <p>A web-based system concept for organizing hospital operations and records.</p>
-            <div class="tags"><span>Full Stack</span><span>Python</span><span>Database</span></div>
+          <div class="project-main">
+            <h2>Hospital Management System</h2>
+            <p>Web application concept for managing hospital workflows and records.</p>
+            <div class="project-tags"><span>FULL STACK</span><span>DATABASE</span><span>WEB APP</span></div>
           </div>
-          <span class="arrow">↗</span>
-        </article>
-
-        <article class="project reveal">
-          <div class="project-number">04</div>
-          <div>
-            <h3>More Projects</h3>
-            <p>More experiments, client work and software projects can be added here.</p>
-            <div class="tags"><span>Coming Soon</span></div>
-          </div>
-          <span class="arrow">↗</span>
-        </article>
+          <span class="project-arrow">↗</span>
+        </a>
       </div>
     </section>
 
     <section id="skills" class="section skills">
-      <div class="section-label">03 / 04</div>
-      <div class="section-heading"><span>Capabilities</span></div>
+      <div class="section-label reveal">03 — CAPABILITIES</div>
       <div class="skills-grid">
-        <div class="skill-group">
-          <h3>Backend &amp; Data</h3>
-          <div class="skill-row"><span>Node.js / Express</span><small>CORE</small></div>
-          <div class="skill-row"><span>PostgreSQL</span><small>CORE</small></div>
-          <div class="skill-row"><span>JavaScript / TypeScript</span><small>CORE</small></div>
-          <div class="skill-row"><span>Python</span><small>LEARNING</small></div>
+        <div class="skill-group reveal">
+          <span class="skill-index">01</span>
+          <h2>Backend & Data</h2>
+          <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>PostgreSQL</li>
+            <li>JavaScript / TypeScript</li>
+            <li>Python</li>
+          </ul>
         </div>
-        <div class="skill-group">
-          <h3>Frontend &amp; Tools</h3>
-          <div class="skill-row"><span>React</span><small>CORE</small></div>
-          <div class="skill-row"><span>HTML / CSS</span><small>CORE</small></div>
-          <div class="skill-row"><span>Git / GitHub</span><small>CORE</small></div>
-          <div class="skill-row"><span>Next.js / Tailwind</span><small>LEARNING</small></div>
-          <div class="skill-row"><span>AWS</span><small>LEARNING</small></div>
+
+        <div class="skill-group reveal">
+          <span class="skill-index">02</span>
+          <h2>Frontend & Tools</h2>
+          <ul>
+            <li>React</li>
+            <li>HTML / CSS</li>
+            <li>Git / GitHub</li>
+            <li>Next.js</li>
+            <li>Tailwind CSS</li>
+            <li>AWS</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <div class="section-label">04 / 04 — GET IN TOUCH</div>
-      <h2>Let's build<br><em>something worth it →</em></h2>
-      <a class="email" href="mailto:mutuaadrian73@gmail.com">mutuaadrian73@gmail.com</a>
-      <div class="socials">
+    <section id="contact" class="contact">
+      <div class="contact-top reveal">
+        <span>04 — CONTACT</span>
+        <span>LET'S WORK TOGETHER</span>
+      </div>
+      <div class="contact-title reveal">
+        <span>HAVE A</span>
+        <span>PROJECT</span>
+        <span class="outline">IN MIND?</span>
+      </div>
+      <a class="email-link" href="mailto:mutuaadrian73@gmail.com">mutuaadrian73@gmail.com <span>↗</span></a>
+
+      <div class="contact-links reveal">
         <a href="https://github.com/adriancodez" target="_blank" rel="noopener">GitHub ↗</a>
         <a href="https://www.linkedin.com/in/adrianmutua" target="_blank" rel="noopener">LinkedIn ↗</a>
       </div>
-      <footer>© 2026 Adrian Mutua <span>Built with HTML, CSS &amp; JavaScript</span></footer>
+
+      <footer>
+        <span>ADRIAN MUTUA</span>
+        <span>NAIROBI, KENYA</span>
+        <span>© 2026</span>
+      </footer>
     </section>
   </main>
+
   <script src="script.js"></script>
 </body>
 </html>
