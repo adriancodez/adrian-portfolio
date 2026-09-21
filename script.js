@@ -28,7 +28,6 @@ document.addEventListener("mousemove", (event) => {
   mouseX = event.clientX;
   mouseY = event.clientY;
 
-  // Small dot follows instantly
   cursorDot.style.left = `${mouseX}px`;
   cursorDot.style.top = `${mouseY}px`;
 
@@ -41,7 +40,6 @@ document.addEventListener("mousemove", (event) => {
 
 function animateCursor() {
 
-  // Smooth following effect
   circleX += (mouseX - circleX) * 0.12;
   circleY += (mouseY - circleY) * 0.12;
 
@@ -193,4 +191,4 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
   });
 
-});
+}); 
