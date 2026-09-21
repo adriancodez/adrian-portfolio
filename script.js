@@ -1,8 +1,119 @@
 // ===============================
+// CUSTOM CURSOR
+// ===============================
+
+const cursorDot = document.createElement("div");
+const cursorCircle = document.createElement("div");
+
+cursorDot.classList.add("cursor-dot");
+cursorCircle.classList.add("cursor-circle");
+
+document.body.appendChild(cursorDot);
+document.body.appendChild(cursorCircle);
+
+
+let mouseX = window.innerWidth / 2;
+let mouseY = window.innerHeight / 2;
+
+let circleX = mouseX;
+let circleY = mouseY;
+
+
+// ===============================
+// MOUSE POSITION
+// ===============================
+
+document.addEventListener("mousemove", (event) => {
+
+  mouseX = event.clientX;
+  mouseY = event.clientY;
+
+  // Small dot follows instantly
+  cursorDot.style.left = `${mouseX}px`;
+  cursorDot.style.top = `${mouseY}px`;
+
+});
+
+
+// ===============================
+// SMOOTH CIRCLE FOLLOW
+// ===============================
+
+function animateCursor() {
+
+  // Smooth following effect
+  circleX += (mouseX - circleX) * 0.12;
+  circleY += (mouseY - circleY) * 0.12;
+
+  cursorCircle.style.left = `${circleX}px`;
+  cursorCircle.style.top = `${circleY}px`;
+
+  requestAnimationFrame(animateCursor);
+
+}
+
+animateCursor();
+
+
+// ===============================
+// HOVER EFFECT
+// ===============================
+
+const interactiveElements = document.querySelectorAll(
+  "a, button, .service-card, .project, .technology-items span"
+);
+
+
+interactiveElements.forEach((element) => {
+
+  element.addEventListener("mouseenter", () => {
+
+    cursorCircle.classList.add("hovering");
+
+    cursorDot.classList.add("hovering");
+
+  });
+
+
+  element.addEventListener("mouseleave", () => {
+
+    cursorCircle.classList.remove("hovering");
+
+    cursorDot.classList.remove("hovering");
+
+  });
+
+});
+
+
+// ===============================
+// HIDE CURSOR WHEN MOUSE LEAVES
+// ===============================
+
+document.addEventListener("mouseleave", () => {
+
+  cursorDot.style.opacity = "0";
+
+  cursorCircle.style.opacity = "0";
+
+});
+
+
+document.addEventListener("mouseenter", () => {
+
+  cursorDot.style.opacity = "1";
+
+  cursorCircle.style.opacity = "1";
+
+});
+
+
+// ===============================
 // SCROLL REVEAL ANIMATION
 // ===============================
 
 const revealElements = document.querySelectorAll(".reveal");
+
 
 const revealObserver = new IntersectionObserver(
   (entries) => {
@@ -37,7 +148,7 @@ revealElements.forEach((element, index) => {
 
 
 // ===============================
-// NAVBAR BACKGROUND ON SCROLL
+// NAVBAR BACKGROUND
 // ===============================
 
 const navbar = document.querySelector(".navbar");
