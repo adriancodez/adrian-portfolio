@@ -1,19 +1,66 @@
-# Adrian Mutua Portfolio — Agency Style
+# Adrian Mutua — Software Engineer
 
-This version uses an agency/business landing-page structure inspired by the layout direction of The Grit Agencies, while using Adrian Mutua's own branding and content.
+Hi, I'm **Adrian Mutua**, a Software Engineer based in Nairobi, Kenya.
 
-## Full technology list
+I build modern websites, web applications, APIs, and digital systems that solve real-world problems.
 
-HTML, CSS, JavaScript, TypeScript, React, Next.js, Node.js, Express.js, Python, PostgreSQL, Tailwind CSS, AWS, Git, GitHub.
+## 🛠️ Technologies
 
-## Run
+* HTML
+* CSS
+* JavaScript
+* TypeScript
+* React
+* Next.js
+* Node.js
+* Express.js
+* Python
+* PostgreSQL
+* Tailwind CSS
+* AWS
+* Git
+* GitHub
 
-Open `index.html` in a browser or use VS Code Live Server.
+## 🚀 Featured Projects
 
-## GitHub update
+### Paul Wambua Valuers
 
-```bash
-git add .
-git commit -m "Redesign portfolio with agency style layout"
-git push
-```
+A professional website built for a property valuation business.
+
+### Event Hub
+
+A full-stack event management application.
+
+### Hospital Management System
+
+A system designed to help manage healthcare-related operations and information.
+
+### Idas Deli
+
+A website built for a cafe and restaurant.
+
+## 📚 Education
+
+**Riara University**
+Software Engineering
+
+**Moringa School**
+Software Engineering
+
+## 📍 Location
+
+Nairobi, Kenya 🇰🇪
+
+## 📬 Contact
+
+**Email:** [mutuaadrian73@gmail.com](mailto:mutuaadrian73@gmail.com)
+
+**GitHub:** https://github.com/adriancodez
+
+**LinkedIn:** https://www.linkedin.com/in/adrianmutua
+
+---
+
+### Built by Adrian Mutua
+
+Software Engineer | Full Stack Developer
