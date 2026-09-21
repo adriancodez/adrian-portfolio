@@ -42,6 +42,7 @@ body {
 
 .background-glow {
   position: fixed;
+
   width: 700px;
   height: 700px;
 
@@ -748,8 +749,6 @@ body {
 
 /* ================= CONTACT ================= */
 
-/* ================= CONTACT ================= */
-
 .contact-section {
   position: relative;
 
@@ -761,9 +760,6 @@ body {
 
   overflow: hidden;
 }
-
-
-/* subtle lavender glow */
 
 .contact-section::before {
   content: "";
@@ -785,9 +781,6 @@ body {
   pointer-events: none;
 }
 
-
-/* contact label */
-
 .contact-label {
   position: relative;
 
@@ -804,15 +797,11 @@ body {
   letter-spacing: 0.08em;
 }
 
-
-/* main contact */
-
 .contact-content {
   position: relative;
 
   padding: 120px 0;
 }
-
 
 .contact-content > p {
   font-family: "DM Mono", monospace;
@@ -824,7 +813,6 @@ body {
   margin-bottom: 30px;
 }
 
-
 .contact-content h2 {
   font-size: clamp(5rem, 13vw, 14rem);
 
@@ -835,9 +823,6 @@ body {
   color: var(--white);
 }
 
-
-/* outlined IT */
-
 .contact-content h2 span {
   color: transparent;
 
@@ -847,7 +832,7 @@ body {
 }
 
 
-/* email */
+/* Main email */
 
 .email-link {
   position: relative;
@@ -869,13 +854,11 @@ body {
   transition: 0.3s ease;
 }
 
-
 .email-link span {
   margin-left: 25px;
 
   color: var(--lavender);
 }
-
 
 .email-link:hover {
   color: var(--lavender-bright);
@@ -884,56 +867,60 @@ body {
 }
 
 
-/* social links */
+/* Clickable EMAIL / GITHUB / LINKEDIN */
 
 .contact-links {
   position: relative;
 
-  display: grid;
+  display: flex;
 
-  grid-template-columns: 1fr 1fr;
+  justify-content: space-between;
+
+  align-items: center;
 
   gap: 30px;
 
   border-top: 1px solid var(--border);
 
-  padding-top: 20px;
+  padding-top: 25px;
 }
 
-
-.contact-links div {
-  display: flex;
-
-  justify-content: space-between;
-
-  gap: 20px;
-}
-
-
-.contact-links span {
-  font-family: "DM Mono", monospace;
-
-  font-size: 0.65rem;
-
-  color: var(--muted);
-}
-
-
-.contact-links a {
+.contact-link {
   color: var(--text);
 
   text-decoration: none;
 
-  transition: 0.3s;
+  font-family: "DM Mono", monospace;
+
+  font-size: 0.7rem;
+
+  letter-spacing: 0.08em;
+
+  transition: 0.3s ease;
 }
 
+.contact-link span {
+  color: var(--lavender);
 
-.contact-links a:hover {
+  margin-left: 8px;
+
+  transition: 0.3s ease;
+}
+
+.contact-link:hover {
   color: var(--lavender-bright);
+
+  transform: translateY(-3px);
+}
+
+.contact-link:hover span {
+  color: var(--lavender-bright);
+
+  transform: translate(3px, -3px);
 }
 
 
-/* footer */
+/* Footer */
 
 .contact-section footer {
   position: relative;
@@ -979,6 +966,143 @@ body {
 
 @media (max-width: 800px) {
 
+  .navbar {
+    padding: 0 20px;
+  }
+
+  .nav-links {
+    display: none;
+  }
+
+  .nav-button {
+    padding: 9px 12px;
+  }
+
+
+  .hero {
+    padding: 120px 20px 35px;
+  }
+
+  .hero-top {
+    flex-direction: column;
+
+    gap: 8px;
+  }
+
+  .hero-content {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .hero-title {
+    font-size: clamp(4.5rem, 20vw, 8rem);
+  }
+
+  .hero-description {
+    max-width: 340px;
+  }
+
+  .hero-bottom {
+    flex-wrap: wrap;
+
+    justify-content: flex-start;
+
+    gap: 12px 25px;
+  }
+
+
+  .stats {
+    grid-template-columns: 1fr;
+
+    padding: 35px 20px;
+  }
+
+  .stat {
+    border-right: none;
+
+    border-bottom: 1px solid var(--border);
+
+    padding: 0 0 25px;
+
+    margin-bottom: 25px;
+  }
+
+  .stat:last-child {
+    border-bottom: none;
+
+    padding-bottom: 0;
+
+    margin-bottom: 0;
+  }
+
+
+  .section {
+    padding: 90px 20px;
+  }
+
+  .section-heading {
+    grid-template-columns: 50px 1fr;
+
+    margin-bottom: 60px;
+  }
+
+  .section-heading h2 {
+    font-size: clamp(2.8rem, 14vw, 6rem);
+  }
+
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    min-height: 270px;
+  }
+
+
+  .technology-row {
+    grid-template-columns: 35px 1fr;
+  }
+
+  .technology-items {
+    gap: 15px 25px;
+  }
+
+  .technology-items span {
+    font-size: 1.2rem;
+  }
+
+
+  .about-grid {
+    grid-template-columns: 1fr;
+
+    gap: 60px;
+  }
+
+  .about-title {
+    font-size: clamp(4rem, 18vw, 8rem);
+  }
+
+
+  .approach-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .approach-card {
+    min-height: 230px;
+  }
+
+  .approach-card h3 {
+    margin-top: 75px;
+  }
+
+
+  .project h3 {
+    font-size: clamp(3rem, 15vw, 7rem);
+  }
+
+
   .contact-section {
     padding: 70px 20px 25px;
   }
@@ -995,15 +1119,17 @@ body {
     margin-top: 60px;
   }
 
-  .contact-links {
-    grid-template-columns: 1fr;
-  }
 
-  .contact-links div {
+  /* Mobile contact links */
+
+  .contact-links {
     flex-direction: column;
 
-    gap: 8px;
+    align-items: flex-start;
+
+    gap: 22px;
   }
+
 
   .contact-section footer {
     flex-direction: column;
