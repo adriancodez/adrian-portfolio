@@ -55,7 +55,7 @@ Nairobi, Kenya 🇰🇪
 
 **Email:** [mutuaadrian73@gmail.com](mailto:mutuaadrian73@gmail.com)
 
-**GitHub:** https://github.com/adriancodez
+**Phone/WhatsApp:** 0787349891
 
 **LinkedIn:** https://www.linkedin.com/in/adrianmutua
 
